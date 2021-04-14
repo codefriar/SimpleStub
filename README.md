@@ -38,7 +38,7 @@ The general mechanism for use looks like this:
 
 ```apex
  TestDouble stub = new TestDouble(SomeClass.class);
- TestDouble.Method methodToTrack = new TestDouble.MethodmethodName')
+ TestDouble.Method methodToTrack = new TestDouble.Method('methodName')
      .returning(someObject);
 
  stub.track(methodToTrack);
